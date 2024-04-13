@@ -20,5 +20,9 @@ return require('packer').startup(function(use)
    use { "catppuccin/nvim", as = "catppuccin" } 
    use "numToStr/FTerm.nvim"
    use "jiangmiao/auto-pairs"
+   use {
+      "nvim-telescope/telescope.nvim", tag = "0.1.6",
+      requires = { {"nvim-lua/plenary.nvim"} }
+   }
 end)
 
