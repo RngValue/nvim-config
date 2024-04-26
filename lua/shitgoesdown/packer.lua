@@ -24,5 +24,17 @@ return require('packer').startup(function(use)
       "nvim-telescope/telescope.nvim", tag = "0.1.6",
       requires = { {"nvim-lua/plenary.nvim"} }
    }
+   use {
+      'nvimdev/dashboard-nvim',
+      event = 'VimEnter',
+      config = function()
+      require('dashboard').setup {
+         config = {
+            header = dashboard_header
+         }
+      }
+      end,
+      requires = {'nvim-tree/nvim-web-devicons'}
+   }
 end)
 
