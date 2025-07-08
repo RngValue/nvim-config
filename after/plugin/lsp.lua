@@ -39,10 +39,14 @@ vim.lsp.config('lua_ls', {
 
 require('mason').setup({})
 require('mason-lspconfig').setup({
+    -- :Mason
+    -- :help lspconfig-all
     ensure_installed = {
         'lua_ls',
         'rust_analyzer',
         'clangd',
+        'pyright',
+        'hls'
     }
 })
 
