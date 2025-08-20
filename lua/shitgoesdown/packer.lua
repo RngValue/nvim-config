@@ -25,9 +25,8 @@ return require('packer').startup(function(use)
         event = 'VimEnter',
         config = function()
         require('dashboard').setup {
-            config = {
-                header = dashboard_header
-            }
+            theme = dashboard_theme,
+            config = dashboard_config 
         }
         end,
         requires = {'nvim-tree/nvim-web-devicons'}
