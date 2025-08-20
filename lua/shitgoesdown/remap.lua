@@ -1,15 +1,20 @@
 vim.g.mapleader = " "
 
--- quality :3
+-- Sex!
 vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
-vim.keymap.set("n", "<ESC>", vim.cmd.noh)
+vim.keymap.set("n", "<leader>r", "<C-6>")
+
+-- da best uwu
 vim.keymap.set({"o", "x"}, "<leader>p", "\"_dP")
 vim.keymap.set("n", "<leader>c", "yiw:%s/<C-R>\"//gc<left><left><left>")
 vim.keymap.set("x", "<leader>c", "y:%s/<C-R>\"//gc<left><left><left>")
+
+-- quality :3
 vim.keymap.set("n", "<leader>w", ":write<CR>")
 vim.keymap.set("n", "<leader>q", ":quit<CR>")
+vim.keymap.set("n", "<ESC>", vim.cmd.noh)
 
--- quality but mobile :3
+-- mobility Ü
 vim.keymap.set({"n", "o", "x"}, "L", "$")
 vim.keymap.set({"n", "o", "x"}, "H", "^")
 

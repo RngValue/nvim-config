@@ -2,18 +2,8 @@ vim.cmd [[packadd packer.nvim]]
 
 return require('packer').startup(function(use)
     use 'wbthomason/packer.nvim'
-    use 'nanozuki/tabby.nvim' 
-    use {
-        "nvim-neo-tree/neo-tree.nvim",
-        branch = "v3.x",
-        requires = { 
-        "nvim-lua/plenary.nvim",
-        "nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
-        "MunifTanjim/nui.nvim",
-        -- "3rd/image.nvim", -- Optional image support in preview window: See `# Preview Mode` for more information
-        }
-    }
-    use { "catppuccin/nvim", as = "catppuccin" } 
+    use 'nanozuki/tabby.nvim'
+    use { "catppuccin/nvim", as = "catppuccin" }
     use "numToStr/FTerm.nvim"
     use "jiangmiao/auto-pairs"
     use {
@@ -31,7 +21,6 @@ return require('packer').startup(function(use)
         end,
         requires = {'nvim-tree/nvim-web-devicons'}
     }
-    
     use {
         'neovim/nvim-lspconfig',
         requires = {
