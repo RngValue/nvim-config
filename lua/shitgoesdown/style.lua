@@ -1,13 +1,19 @@
-vim.cmd("set relativenumber")
-vim.cmd("set cursorline")
-
 require("catppuccin").setup({
-	transparent_background = true
+    flavour = "macchiato",
+	transparent_background = true,
+    float = {
+        transparent = true
+    }
 })
 
 vim.cmd("colorscheme catppuccin")
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+vim.o.tabstop = 4
+vim.o.softtabstop = 4
+vim.o.shiftwidth = 4
+vim.o.expandtab = true
+
+vim.o.signcolumn = "yes"
+vim.o.number = true
+vim.o.relativenumber = true
+vim.o.cursorline = true
