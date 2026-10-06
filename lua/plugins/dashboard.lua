@@ -1,5 +1,5 @@
-dashboard_theme = 'doom'
-dashboard_config = {
+local dashboard_theme = 'doom'
+local dashboard_config = {
     header = {
         [[  ]],
         [[  ]],
@@ -35,4 +35,16 @@ dashboard_config = {
         },
     },
     vertical_center = true,
+}
+
+return {
+    'nvimdev/dashboard-nvim',
+    event = 'VimEnter',
+    config = function()
+        require('dashboard').setup {
+            theme = dashboard_theme,
+            config = dashboard_config
+        }
+    end,
+    dependencies = { {'nvim-tree/nvim-web-devicons'}}
 }
