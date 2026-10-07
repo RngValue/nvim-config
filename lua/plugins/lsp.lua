@@ -1,4 +1,12 @@
-local mason_ensure_installed = { "lua_ls" }
+local mason_ensure_installed = {
+    "lua_ls",
+    "bashls",
+    "clangd",
+    "pyright",
+    "html",
+    "eslint",
+    "cssls"
+}
 
 local lspconfig_deps = {
     {'hrsh7th/nvim-cmp'},
